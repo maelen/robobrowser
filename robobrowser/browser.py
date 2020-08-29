@@ -5,6 +5,8 @@ Robotic browser.
 import re
 import requests
 from bs4 import BeautifulSoup
+import werkzeug
+werkzeug.cached_property = werkzeug.utils.cached_property
 from werkzeug import cached_property
 from requests.packages.urllib3.util.retry import Retry
 
